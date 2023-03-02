@@ -3,27 +3,30 @@ import { Link } from "react-router-dom";
 import arrow from "../../images/arrow.svg";
 
 function Portfolio() {
-return(
-    <ul className="portfolio">
-        <li>
-            <Link to="" className="portfolio__link">
-                <h2>Статичный сайт</h2>
-                <img src={arrow} alt="Стрелка" />
-            </Link>
-        </li>
-        <li>
-            <Link to="" className="portfolio__link">
-                <h2>Адаптивный сайт</h2>
-                <img src={arrow} alt="Стрелка" />
-            </Link>
-        </li>
-        <li>
-            <Link to="" className="portfolio__link">
-                <h2>Одностраничное приложение</h2>
-                <img src={arrow} alt="Стрелка" />
-            </Link>
-        </li>
-    </ul>
-)
+    return (
+        <>
+            <h2 className="portfolio">Портфолио</h2>
+            <ul className="portfolio-links">
+                <li className="portfolio-li">
+                    <Link to="" className="portfolio-link">
+                        <h2 className="portfolio-link__title">Статичный сайт</h2>
+                        <img src={arrow} alt="Стрелка" />
+                    </Link>
+                </li>
+                <li className="portfolio-li">
+                    <Link to="" className="portfolio-link">
+                        <h2 className="portfolio-link__title">Адаптивный сайт</h2>
+                        <img src={arrow} alt="Стрелка" />
+                    </Link>
+                </li>
+                <li className="portfolio-li">
+                    <Link to="" className="portfolio-link">
+                        <h2 className="portfolio-link__title">Одностраничное приложение</h2>
+                        <img src={arrow} alt="Стрелка" />
+                    </Link>
+                </li>
+            </ul>
+        </>
+    )
 }
- export default Portfolio;
+export default Portfolio;

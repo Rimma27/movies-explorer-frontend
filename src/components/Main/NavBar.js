@@ -1,15 +1,15 @@
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-    const location = useLocation();
     return (
         <div className="navbar">
-            {location.pathname === '/sign-in' &&
-                <Link to='sign-up' className="navbar__item">Регистрация</Link>
-            }
-            {location.pathname === '/sign-up' &&
-                <Link to='sign-in' className="navbar__item">Войти</Link>
-            }
+            <button className="navbar__register">Регистрация
+                <Link to='sign-up'></Link>
+            </button>
+            <button className="navbar__login">Войти
+                <Link to='sign-in'></Link>
+            </button>
         </div>
     )
 }

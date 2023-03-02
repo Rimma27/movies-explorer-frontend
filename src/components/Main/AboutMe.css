@@ -1,0 +1,50 @@
+.author {
+    position: relative;
+    margin: 66px 70px 100px;
+}
+
+.author__name {
+    margin-bottom: 18px;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+}
+
+.author__about {
+    margin-bottom: 26px;
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.author_description {
+    margin-bottom: 99px;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.author__github {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.author__github:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.author__avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 327px;
+}

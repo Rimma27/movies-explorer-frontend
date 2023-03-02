@@ -1,14 +1,13 @@
 import React from "react";
 import line from "../../images/headerLine.svg";
 
-function Block({ name, component: Component, ...props }) {
+function Block({ name, children, style }) {
     return (
-        <>
-            <div className="block-header">{name}
-                <img className="block-header__line" src={line} alt="Линия" />
-            </div>
-            <Component {...props} />
-        </>
+        <div style={style}>
+            <h2 className="block-header">{name}</h2>
+            <img className="block-line" src={line} alt="Линия" />
+            {children}
+        </div>
     )
 }
 
