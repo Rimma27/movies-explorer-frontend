@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import avatar from "../../images/avatar.svg";
+import avatar from "../../images/avatar.jpg";
 
 function AboutMe({ children }) {
     return (
