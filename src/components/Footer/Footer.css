@@ -1,0 +1,52 @@
+.footer__title {
+    margin: 79px 480px 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+    color: #A0A0A0;
+}
+
+.footer__line {
+    margin: 0 70px 20px;
+}
+
+.footer__basement {
+    position: relative;
+    margin: 0 70px 20px;
+}
+
+.footer__copyright {
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+}
+
+.footer__links {
+    position: absolute;
+    display: flex;
+    right: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+}
+
+.footer__yandex {
+    color:#000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer__yandex:hover {
+    opacity: 70%;
+}
+
+.footer__github {
+    color:#000000;
+    text-decoration: none;
+}
+
+.footer__github:hover {
+    opacity: 70%;
+}
