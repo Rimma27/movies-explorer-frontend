@@ -1,0 +1,47 @@
+.search {
+    display: flex;
+    margin: 0 70px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(170, 170, 170, .2);
+}
+
+.search__form {
+    position: relative;
+    margin: 80px 41px 83px 0;
+    width: 932px;
+    height: 48px;
+    border: 1.5px solid rgba(170, 170, 170, .2);
+    border-radius: 50px;
+}
+
+.search__button {
+    position: absolute;
+    padding: 0;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    border: none;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__shortFilms {
+    margin: 95px 14px 98px 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.search__filter {
+    margin: 94px 0 97px;
+    width: 36px;
+    height: 20px;
+    border: none;
+    padding: 0;
+}
+
+.search__filter:hover {
+    cursor: pointer;
+}
