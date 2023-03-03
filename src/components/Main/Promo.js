@@ -14,7 +14,7 @@ function Promo() {
             <main className="promo">
                 <h1 className="promo__title">Учебный проект студента факультета Веб-разработки.</h1>
                 <p className="promo__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
-                <button className="promo__button-link">
+                <button type="button" className="promo__button-link">
                 <Link to="" className="promo__link">Узнать больше</Link>  
                 </button>              
                 <img className="promo__logo" src={promoLogo} alt="Всемирная сеть" />

@@ -8,10 +8,19 @@
 .search__form {
     position: relative;
     margin: 80px 41px 83px 0;
-    width: 932px;
-    height: 48px;
+    width: 929px;
+    height: 45px;
     border: 1.5px solid rgba(170, 170, 170, .2);
     border-radius: 50px;
+}
+
+.search__input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(160, 160, 160, 1);
+    border: none;
+    margin: 15px 777px 15px 22px;
 }
 
 .search__button {
