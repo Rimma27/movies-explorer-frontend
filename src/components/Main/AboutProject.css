@@ -1,21 +1,19 @@
 .description {
     display: flex;
     margin: 70px 70px 110px;
-    justify-content: space-between;
 }
 
-.description__cell {
-    text-align: start;
-    margin-right: 40px;
-    width: 550px;
+.description__cells {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 40px;
 }
 
-.description__cell:last-child {
-    margin: 0;
-}
 
 .description__title {
     margin-bottom: 26px;
+    margin-top: 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 24.2px;
@@ -23,6 +21,7 @@
 }
 
 .description__subtitle {
+    margin-top: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -64,4 +63,86 @@
     font-size: 14px;
     line-height: 17px;
     color: #A0A0A0;
+}
+
+@media screen and (max-width: 1279px) {
+    .description {
+        margin: 70px 50px 93px;
+    }
+
+    .description__cells {
+        gap: 30px;
+    }
+
+    .description__title {
+        margin-bottom: 22px;
+    }
+
+    .description__subtitle {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .timeline {
+        margin: 0 50px 90px;
+    }
+    .timeline__cell {
+        width: 140px;
+    }
+    .timeline__cell_front {
+        width: calc(100% - 140px);
+    }
+    .timeline__dev {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .description {
+        flex-direction: column;
+        margin: 60px 18px;
+    }
+
+    .description__cells {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .description__cell {
+        margin: 0 0 56px;
+    }
+
+    .description__cell:last-child {
+        margin: 0;
+    }
+
+    .description__title {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 21.78px;
+    }
+
+    .description__subtitle {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .timeline {
+        margin: 0 18px 70px;
+    }
+    .timeline__cell {
+        width: 100px;
+    }
+    .timeline__cell_front {
+      width: calc(100% - 100px);
+    }
+    .timeline__week {
+        font-size: 11px;
+        line-height: 13.31px;
+    }
+    .timeline__dev {
+        font-size: 11px;
+        line-height: 12.74px;
+    }
 }
