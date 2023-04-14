@@ -1,4 +1,5 @@
 .navbar {
+    display: flex;
     margin-top: 21px;
 }
 
@@ -11,6 +12,7 @@
     font-size: 12px;
     line-height: 16px;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .navbar__register:hover {
@@ -19,16 +21,19 @@
 }
 
 .navbar__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 76px;
     height: 32px;
     padding: 0;
-    border: 1px solid rgba(43, 224, 128, 1);
     border-radius: 3px;
     background-color: rgba(43, 224, 128, 1);
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .navbar__login:hover {

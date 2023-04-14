@@ -1,0 +1,101 @@
+.auth-header {
+    width: 396px;
+    margin: 70px auto 40px;
+}
+
+.auth__logo {
+    margin-bottom: 40px;
+    width: 38px;
+    height: 38px;
+}
+
+.auth__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.05px;
+}
+
+.auth__form {
+    margin: 0 auto 0;
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__submit {
+    background-color: #2BE080;
+    color: #FFFFFF;
+    width: 396px;
+    height: 45px;
+    margin-top: 69px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.auth__submit:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.register__signin {
+    display: flex;
+    align-items: center;
+    margin: 16px auto 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.register__signin-title {
+    margin: 0 6px 0 0;
+    color: #A0A0A0;
+}
+
+.register__login-link {
+    color: #2BE080;
+    text-decoration: none;
+}
+
+.register__login-link:hover {
+    opacity: 80%;
+}
+
+@media screen and (max-width: 1279px) {
+    .auth-header {
+        margin: 232px auto 40px;
+    }
+    .register__signin {
+        margin-bottom: 232px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .auth-header {
+        width: 260px;
+        margin: 56px auto 80px;
+        text-align: center;
+    }
+    .auth__logo {
+        margin-bottom: 50px;
+    }
+    .auth__form {
+        width: 260px;
+    }
+    .auth__submit {
+        width: 260px;
+        margin-top: 157px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .register__signin {
+        margin: 14px auto 30px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .register__signin-title {
+        margin-right: 7px;
+    }
+}

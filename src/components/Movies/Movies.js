@@ -3,12 +3,12 @@ import Header from "../Header/Header";
 import SearchForm from "./SearchForm";
 import MoviesCardList from "./MoviesCardList";
 
-function Movies () {
-    return(
+function Movies() {
+    return (
         <>
-        <Header />
-        <SearchForm />
-        <MoviesCardList />
+            <Header />
+            <SearchForm />
+            <MoviesCardList />
         </>
     )
 }

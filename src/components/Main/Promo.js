@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../images/logo.svg';
 import promoLogo from '../../images/promo_logo.svg';
 import NavBar from './NavBar';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function Promo() {
     return (
@@ -15,9 +15,8 @@ function Promo() {
                 <img className="promo__logo" src={promoLogo} alt="Всемирная сеть" />
                 <h1 className="promo__title">Учебный проект студента факультета Веб-разработки.</h1>
                 <p className="promo__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
-                <button type="button" className="promo__button-link">
                     <Link to="" className="promo__link">Узнать больше</Link>
-                </button>
+                <Outlet />
             </main>
         </>
     )
