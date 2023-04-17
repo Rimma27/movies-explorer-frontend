@@ -22,11 +22,18 @@
 
 .button {
     margin: 0 auto 60px;
+    border: none;
+    background-color: transparent;
     color: #2BE080;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+}
+
+.button:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1279px) {
