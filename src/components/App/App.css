@@ -5,6 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -37,6 +38,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

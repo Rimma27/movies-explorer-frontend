@@ -11,10 +11,12 @@ function SearchForm() {
                     <img src={search} alt="Поиск" />
                 </button>
             </form>
-            <h2 className="search__shortFilms">Короткометражки</h2>
-            <button type="button" className="search__filter">
-                <img src={filter} alt="Фильтр" />
-                </button> 
+            <div className="search-shortFilms">
+                <h2 className="search__title">Короткометражки</h2>
+                <button type="button" className="search__filter">
+                    <img src={filter} alt="Фильтр" />
+                </button>
+            </div>
         </div>
     )
 }

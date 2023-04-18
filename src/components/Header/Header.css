@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    position: relative;
     margin: 0 70px;
 }
 
@@ -24,17 +25,24 @@
     text-decoration: none;
 }
 
+.menu__films_active {
+    margin-right: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
 .menu__films:last-child {
     margin-right: 0;
 }
 
-.menu__films_active {
-    font-weight: 500;
-}
-
 .account {
     display: flex;
-    margin: 21px 0 23px;
+    position: absolute;
+    top: 21px;
+    right: 0;
     width: 100px;
     height: 30px;
 
@@ -51,4 +59,40 @@
     width: 11.5px;
     height: 14px;
     margin: 8px 7.25px 8px 0;
+}
+
+.header__burger {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.header__burger:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+    .header {
+        margin: 0 30px;
+    }
+
+    .header__logo {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        margin: 0 14px;
+    }
+    .header__burger {
+        width: 40px;
+        height: 43px;
+    }
 }
