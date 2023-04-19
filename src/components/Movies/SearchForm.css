@@ -37,6 +37,7 @@
     top: 7px;
     bottom: 7px;
     border: none;
+    background: transparent;
 }
 
 .search__button:hover {
@@ -61,6 +62,7 @@
     height: 20px;
     border: none;
     padding: 0;
+    background: transparent;
 }
 
 .search__filter:hover {

@@ -26,12 +26,7 @@
 }
 
 .menu__films_active {
-    margin-right: 16px;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 18px;
-    color: #000000;
-    text-decoration: none;
 }
 
 .menu__films:last-child {

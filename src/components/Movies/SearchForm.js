@@ -1,6 +1,6 @@
 import React from "react";
-import search from '../../images/find.jpg';
-import filter from '../../images/filterON.jpg';
+import search from '../../images/find.svg';
+import filter from '../../images/filterON.svg';
 
 function SearchForm() {
     return (

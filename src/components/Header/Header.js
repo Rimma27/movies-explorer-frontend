@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import logo from '../../images/logo.svg';
-import account from '../../images/account.jpg';
+import account from '../../images/account.svg';
 import menu from '../../images/icon_menu.svg';
 
 function Header() {
@@ -19,7 +19,7 @@ function Header() {
             <header className="header">
                 <img className="header__logo" src={logo} alt="Логотип" />
                 <nav className="menu">
-                    <NavLink to="/movies" className={({ isActive }) => `${isActive ? "menu__films_active" : "menu__films"}`}>Фильмы</NavLink>
+                    <NavLink to="/movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Фильмы</NavLink>
                     <NavLink to="/saved-movies" className="menu__films">Сохранённые фильмы</NavLink>
                 </nav>
                 <div className="account">

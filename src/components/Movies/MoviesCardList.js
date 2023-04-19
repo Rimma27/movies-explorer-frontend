@@ -11,11 +11,10 @@ function MoviesCardList({ onFilmLike }) {
                     name={film.name}
                     image={film.image}
                     duration={film.duration}
-                    onFilmLike={onFilmLike}
+                    like={film.like}
                 />)
             )}
-            <MoviesCard />
-            <div className="films__more">Ещё</div>
+            <button className="films__more">Ещё</button>
         </div>
     )
 }
