@@ -20,7 +20,7 @@ function Header() {
                 <img className="header__logo" src={logo} alt="Логотип" />
                 <nav className="menu">
                     <NavLink to="/movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Фильмы</NavLink>
-                    <NavLink to="/saved-movies" className="menu__films">Сохранённые фильмы</NavLink>
+                    <NavLink to="/saved-movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Сохранённые фильмы</NavLink>
                 </nav>
                 <div className="account">
                     <h2 className="account__text">Аккаунт</h2>

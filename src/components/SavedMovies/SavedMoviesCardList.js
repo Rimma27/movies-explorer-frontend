@@ -1,11 +1,11 @@
 import React from "react";
-import MoviesCard from "./MoviesCard";
-import { films } from "../../utils/constans";
+import { savedFilms } from "../../utils/constans";
+import MoviesCard from "../Movies/MoviesCard";
 
-function MoviesCardList() {
+function SavedMoviesCardList() {
     return (
         <div className="films">
-            {films.map((film) => (
+            {savedFilms.map((film) => (
                 <MoviesCard
                     film={film}
                     name={film.name}
@@ -14,9 +14,8 @@ function MoviesCardList() {
                     like={film.like}
                 />)
             )}
-            <button className="films__more">Ещё</button>
         </div>
     )
 }
 
-export default MoviesCardList;
+export default SavedMoviesCardList;

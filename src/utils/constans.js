@@ -6,6 +6,7 @@ import film5 from '../images/5.jpg';
 import film6 from '../images/6.jpg';
 import film7 from '../images/7.jpg';
 import like from '../images/like.svg';
+import close from '../images/close.svg';
 
 export const films = [
     {
@@ -23,8 +24,7 @@ export const films = [
     {
         name: "В погоне за Бенкси",
         duration: "1ч 42м",
-        image: film3,
-        like: null
+        image: film3
     },
     {
         name: "Баския: Взрыв реальности",
@@ -47,4 +47,25 @@ export const films = [
         duration: "1ч 42м",
         image: film7
     }
+]
+
+export const savedFilms = [
+        {
+            name: "33 слова о дизайне",
+            duration: "1ч 42м",
+            image:  film1 ,
+            like: close
+        },
+        {
+            name: "Киноальманах «100 лет дизайна»",
+            duration: "1ч 42м",
+            image: film2 ,
+            like: close 
+        },
+        {
+            name: "В погоне за Бенкси",
+            duration: "1ч 42м",
+            image: film3,
+            like: close
+        },
 ]
