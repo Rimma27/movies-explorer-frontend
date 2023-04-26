@@ -4,7 +4,7 @@ import logo from '../../images/logo.svg';
 import account from '../../images/account.svg';
 import menu from '../../images/icon_menu.svg';
 
-function Header() {
+function Header({ setMenuActive }) {
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 1280;
     React.useEffect(() => {
@@ -14,15 +14,16 @@ function Header() {
             window.removeEventListener("resize", handleResizeWindow);
         };
     }, []);
+
     if (width >= breakpoint) {
         return (
             <header className="header">
                 <img className="header__logo" src={logo} alt="Логотип" />
-                <nav className="menu">
-                    <NavLink to="/movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Фильмы</NavLink>
-                    <NavLink to="/saved-movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Сохранённые фильмы</NavLink>
+                <nav className="nav">
+                    <NavLink to="/movies" className={({ isActive }) => `${isActive ? "nav__films nav__films_active" : "nav__films"}`}>Фильмы</NavLink>
+                    <NavLink to="/saved-movies" className={({ isActive }) => `${isActive ? "nav__films nav__films_active" : "nav__films"}`}>Сохранённые фильмы</NavLink>
                 </nav>
-                <Link to="/profile"  className="account">
+                <Link to="/profile" className="account">
                     <h2 className="account__text">Аккаунт</h2>
                     <img className="account__img" src={account} alt="Аккаунт" />
                 </Link>
@@ -32,13 +33,16 @@ function Header() {
     }
     else {
         return (
-            <header className="header">
-                <img className="header__logo" src={logo} alt="Логотип" />
-                <button className="header__burger">
-                    <img src={menu} alt="Меню" />
-                </button>
-                <Outlet />
-            </header>
+            <>
+                <header className="header">
+                    <img className="header__logo" src={logo} alt="Логотип" />
+                        <button type="button" className="header__burger" onClick={setMenuActive}>
+                            <img src={menu} alt="Меню" />
+                        </button>
+                    <Outlet />
+                </header>
+
+            </>
         )
     }
 }

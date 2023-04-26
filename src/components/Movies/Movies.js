@@ -4,10 +4,10 @@ import SearchForm from "./SearchForm";
 import MoviesCardList from "./MoviesCardList";
 import Footer from "../Footer/Footer";
 
-function Movies() {
+function Movies({setMenuActive}) {
     return (
         <>
-            <Header />
+            <Header setMenuActive={setMenuActive} />
             <SearchForm />
             <MoviesCardList />
             <Footer />

@@ -1,0 +1,103 @@
+.menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+}
+
+.menu_active {
+    visibility: visible;
+}
+
+.blur {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 520px;
+    background: #000000;
+    opacity: 0.3;
+}
+
+.menu__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 520px;
+    right: 0;
+    background-color: white;
+}
+
+.menu__exit {
+    position: absolute;
+    top: 22.44px;
+    right: 22.44px;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu__exit:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+.menu__exit-img {
+    width: 22px;
+    height: 22px;
+}
+
+.menu__ul {
+    margin: 159px 90px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__li {
+    margin: 0 auto 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.menu__li {
+    list-style-type: none;
+}
+
+.menu__link {
+    color: black;
+    text-decoration: none;
+}
+.menu__link_active {
+    border-bottom: 2px solid black;
+}
+
+.menu-account {
+    position: absolute;
+    bottom: 92px;
+    right: 210px;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-account__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.menu-account__img {
+    width: 11.5px;
+    height: 14px;
+    padding: 8px 7.25px;
+}
+
+@media screen and (max-width: 767px) {
+}

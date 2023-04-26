@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 
-function Profile() {
+function Profile({setMenuActive}) {
     return (
         <>
-            <Header />
+            <Header setMenuActive={setMenuActive} />
             <div className="profile">
                 <h2 className="profile__title">Привет, Виталий!</h2>
                 <form className="profile__form">

@@ -29,6 +29,7 @@
 @import url(./components/Navigation/Navigation.css);
 
 @import url(./components/PageNotFound/PageNotFound.css);
-@import url();
+
+@import url(./components/Menu/Menu.css);
 @import url();
 @import url();
