@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
 import logo from '../../images/logo.svg';
 import account from '../../images/account.svg';
 import menu from '../../images/icon_menu.svg';
@@ -22,10 +22,10 @@ function Header() {
                     <NavLink to="/movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Фильмы</NavLink>
                     <NavLink to="/saved-movies" className={({ isActive }) => `${isActive ? "menu__films menu__films_active" : "menu__films"}`}>Сохранённые фильмы</NavLink>
                 </nav>
-                <div className="account">
+                <Link to="/profile"  className="account">
                     <h2 className="account__text">Аккаунт</h2>
                     <img className="account__img" src={account} alt="Аккаунт" />
-                </div>
+                </Link>
                 <Outlet />
             </header>
         )
