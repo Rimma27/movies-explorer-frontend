@@ -11,7 +11,7 @@
 
 .blur {
     position: absolute;
-    width: 100vw;
+    width: calc(100vw - 520px);
     height: 100vh;
     right: 520px;
     background: #000000;
@@ -38,10 +38,12 @@
     border: none;
     background-color: transparent;
 }
+
 .menu__exit:hover {
     cursor: pointer;
     opacity: 80%;
 }
+
 .menu__exit-img {
     width: 22px;
     height: 22px;
@@ -70,15 +72,14 @@
     color: black;
     text-decoration: none;
 }
+
 .menu__link_active {
     border-bottom: 2px solid black;
 }
 
 .menu-account {
-    position: absolute;
-    bottom: 92px;
-    right: 210px;
     display: flex;
+    margin: auto auto 92px;
     width: 100px;
     height: 30px;
     justify-content: space-between;
@@ -99,5 +100,27 @@
     padding: 8px 7.25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1280px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .blur {
+        display: none;
+    }
+
+    .menu__content {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .menu__ul {
+        margin: 144px 10px auto;
+    }
+
+    .menu__li {
+        margin-bottom: 24px;
+    }
 }
