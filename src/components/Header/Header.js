@@ -18,7 +18,9 @@ function Header({ setMenuActive }) {
     if (width >= breakpoint) {
         return (
             <header className="header">
-                <img className="header__logo" src={logo} alt="Логотип" />
+                <NavLink to="/" >
+                    <img className="header__logo" src={logo} alt="Логотип" />
+                </NavLink>
                 <nav className="nav">
                     <NavLink to="/movies" className={({ isActive }) => `${isActive ? "nav__films nav__films_active" : "nav__films"}`}>Фильмы</NavLink>
                     <NavLink to="/saved-movies" className={({ isActive }) => `${isActive ? "nav__films nav__films_active" : "nav__films"}`}>Сохранённые фильмы</NavLink>
@@ -36,9 +38,9 @@ function Header({ setMenuActive }) {
             <>
                 <header className="header">
                     <img className="header__logo" src={logo} alt="Логотип" />
-                        <button type="button" className="header__burger" onClick={setMenuActive}>
-                            <img src={menu} alt="Меню" />
-                        </button>
+                    <button type="button" className="header__burger" onClick={setMenuActive}>
+                        <img src={menu} alt="Меню" />
+                    </button>
                     <Outlet />
                 </header>
 
